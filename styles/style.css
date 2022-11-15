@@ -1,0 +1,20 @@
+/* Small CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Lustria-Regular;
+    src: url(../fonts/Lustria-Regular.woff2);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Lustria-Regular", sans-serif;
+}

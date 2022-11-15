@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 54px;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+address a {
+    font-style: normal;
+    color: black;
+    font-size: 12px;
+    font-family: "Lustria-Regular";
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+footer img:last-of-type {
+    margin-right: 24px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}

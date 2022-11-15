@@ -1,0 +1,41 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 111px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px 0;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    position: absolute;
+    top: 56px;
+    bottom: 19px;
+}
+
+h1 {
+    font-family: "Lustria-Regular", sans-serif;
+    background-color: #D9D9D9;
+    font-size: 24px;
+    font-weight: normal;
+    width: 123px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.hamburger {
+    margin-left: 23px;
+    background-color: #D9D9D9;
+    padding: 11.5px 3.5px 11.5px 3.5px;
+}
+
+.basket {
+    margin-right: 23px;
+    background-color: #D9D9D9;
+    padding: 4.5px 8px 4.5px 8px;
+}
