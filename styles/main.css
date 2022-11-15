@@ -4,6 +4,7 @@ main {
 
 /* Story section */
 .story-section {
+    margin-top: 111px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -46,6 +47,7 @@ main {
     font-family: "Lustria-Regular", sans-serif;
     height: 42px;
     width: 133px;
+    color: black;
 }
 
 /* Collection section */
@@ -78,4 +80,15 @@ main {
 /* Article */
 .article-paragraph {
     margin: 42px 24px 42px 24px;
+}
+
+/* Sign-up section */
+.sign-up-section {
+    width: 100%;
+    margin: 0 24px 24px 24px;
+}
+
+.sign-up-section img {
+    max-width: calc(100%);
+    object-fit: contain;
 }

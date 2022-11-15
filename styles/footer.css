@@ -2,7 +2,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 54px;
     width: 100%;
     background-color: #D9D9D9;
@@ -17,8 +17,15 @@ address a {
     margin-right: 24px;
 }
 
+.article-social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 footer img:last-of-type {
     margin-right: 24px;
+    margin-left: 16px;
 }
 
 footer img {
