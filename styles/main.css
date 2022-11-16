@@ -58,6 +58,7 @@ main {
 .collection-section {
     width: 100%;
     margin-top: 42px;
+    font-size: 16px;
 }
 
 .collection-section-heading2 {
@@ -126,3 +127,34 @@ main {
     transform: translateX(50%);
     bottom: 8%;
 }
+
+/* Follow us section */
+.follow-section {
+    width: calc(100% - 48px);
+    margin: 48px auto 48px auto;
+}
+
+.follow-section-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 16px;
+}
+
+.follow-section-heading2 {
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.follow-section-grid-item-container img {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.follow-section-grid-item-container p {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
