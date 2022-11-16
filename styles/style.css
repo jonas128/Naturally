@@ -9,6 +9,11 @@
     src: url(../fonts/Lustria-Regular.woff2);
 }
 
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter-Regular.woff);
+}
+
 body {
     box-sizing: border-box;
 }
