@@ -2,8 +2,9 @@ main {
     width: 100%;
 }
 
-/* Story section */
+/* Our story section */
 .story-section {
+    margin-top: 111px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,12 +33,15 @@ main {
     border-radius: 100%;
     background-color: #D9D9D9;
     margin: 24px 3.5px 24px 3.5px;
+    font-weight: normal;
 }
 
-.story-section-paragraph {
-    width: 70%;
+.story-section-heading2 {
+    width: 270px;
     text-align: center;
     margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .story-section-button {
@@ -46,17 +50,21 @@ main {
     font-family: "Lustria-Regular", sans-serif;
     height: 42px;
     width: 133px;
+    color: black;
+    font-size: 16px;
 }
 
 /* Collection section */
 .collection-section {
     width: 100%;
     margin-top: 42px;
+    font-size: 16px;
 }
 
-.collection-section-paragraph {
+.collection-section-heading2 {
     margin-bottom: 8px;
     margin-left: 24px;
+    line-height: 26px;
 }
 
 .collection-section-image-container {
@@ -77,5 +85,76 @@ main {
 
 /* Article */
 .article-paragraph {
+    font-size: 16px;
+    line-height: 26px;
     margin: 42px 24px 42px 24px;
+    font-family: "Inter-Regular", sans-serif;
 }
+
+/* Sign-up section */
+.sign-up-section {
+    width: calc(100% - 48px);
+    margin: 24px auto;
+    position: relative;
+}
+
+.sign-up-section img {
+    max-width: 100%;
+}
+
+.sign-up-section-heading2 {
+    position: absolute;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    text-align: center;
+    top: 12%;
+    right: 50%;
+    width: 46%;
+    transform: translateX(50%);
+}
+
+.sign-up-section-button {
+    position: absolute;
+    background-color: #D9D9D9;
+    border: none;
+    font-family: "Lustria-Regular", sans-serif;
+    height: 42px;
+    width: 133px;
+    color: black;
+    font-size: 16px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 8%;
+}
+
+/* Follow us section */
+.follow-section {
+    width: calc(100% - 48px);
+    margin: 48px auto 48px auto;
+}
+
+.follow-section-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 16px;
+}
+
+.follow-section-heading2 {
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.follow-section-grid-item-container img {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.follow-section-grid-item-container p {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
