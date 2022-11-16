@@ -18,3 +18,14 @@ p {
     font-weight: normal;
     font-family: "Lustria-Regular", sans-serif;
 }
+
+h2, h3 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Lustria-Regular", sans-serif;
+    font-weight: normal;
+}

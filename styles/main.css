@@ -2,7 +2,7 @@ main {
     width: 100%;
 }
 
-/* Story section */
+/* Our story section */
 .story-section {
     margin-top: 111px;
     width: 100%;
@@ -33,12 +33,15 @@ main {
     border-radius: 100%;
     background-color: #D9D9D9;
     margin: 24px 3.5px 24px 3.5px;
+    font-weight: normal;
 }
 
-.story-section-paragraph {
-    width: 70%;
+.story-section-heading2 {
+    width: 270px;
     text-align: center;
     margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .story-section-button {
@@ -48,6 +51,7 @@ main {
     height: 42px;
     width: 133px;
     color: black;
+    font-size: 16px;
 }
 
 /* Collection section */
@@ -56,9 +60,10 @@ main {
     margin-top: 42px;
 }
 
-.collection-section-paragraph {
+.collection-section-heading2 {
     margin-bottom: 8px;
     margin-left: 24px;
+    line-height: 26px;
 }
 
 .collection-section-image-container {
@@ -79,16 +84,31 @@ main {
 
 /* Article */
 .article-paragraph {
+    font-size: 16px;
+    line-height: 26px;
     margin: 42px 24px 42px 24px;
+    font-family: "Inter", sans-serif;
 }
 
 /* Sign-up section */
 .sign-up-section {
-    width: 100%;
-    margin: 0 24px 24px 24px;
+    width: calc(100% - 48px);
+    margin: 24px auto;
+    position: relative;
 }
 
 .sign-up-section img {
-    max-width: calc(100%);
-    object-fit: contain;
+    max-width: 100%;
+}
+
+.sign-up-section-heading2 {
+    position: absolute;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    text-align: center;
+    top: 12%;
+    right: 50%;
+    width: 46%;
+    transform: translateX(50%);
 }
