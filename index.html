@@ -14,7 +14,20 @@
     <header>
         <div class="flex-container">
             <nav>
-                <img class="hamburger" src="images/hamburger-menu.svg" alt="hamburger menu">
+                <img class="hamburger" src="images/hamburger-menu.svg" alt="hamburger menu button">
+                <div class="hamburger-menu-wrapper">
+                    <ul class="hamburger-menu-list">
+                        <li>Search</li>
+                        <li>Products</li>
+                        <li>Shopping cart</li>
+                        <li>Our story</li>
+                        <li>Contact us</li>
+                        <div class="choose-language-container">
+                            <li>In Swedish</li> 
+                            <img src="images/flag-sweden.svg">
+                        </div>
+                    </ul>
+                </div>
             </nav>
             <h1 class="logo">Naturally</h1>
             <img class="basket" src="images/bag.svg" alt="shopping bag">
@@ -46,10 +59,14 @@
         </section>
         <!-- Article -->
         <article>
-            <p class="article-paragraph">Turning Pattern is a new sustainable clothing line that aims to help you feel more confident and supported in your own skin. Inspired by one of the most fashinating pattern occuring in nature, the Turing Pattern, we created this unique look. We believe that everyone deserves to be comfortable, therefore we developed a relaxed collection with soft trousers, hoodie and accessories that are made from materials that are easy on the environment and easy on you. When we say "easy on the environment," we mean it! The fabric used in our clothes is made from 100% recycled PET bottles. Turning Pattern has found a way to repurpose them into something beautiful—and just for you!
-            <br><br>
-            If you're looking for an eco-friendly way to dress up this season, let the fish mesmerize you.
+            <p class="article-paragraph">
+                The Turing collection is a new sustainable clothing line that aims to help you feel more confident and supported in your own skin. Inspired by one of the most fascinating pattern<span id="dots">...</span><span id="more"> occuring in nature, the Turing pattern, we created this unique look. 
+                <br><br>
+                We believe that everyone deserves to be comfortable. Therefore, we developed a relaxed collection of sweat pants, hoodie and accessories. The whole collection are made from materials that are easy on the environment and easy on you. When we say "easy on the environment," we mean it! The fabric used in our clothes is made from 70% recycled PET bottles. 
+                <br><br>
+                The Turing collection has found a way to repurpose them into something beautiful— just for you!</span>
             </p>
+            <button class="article-read-more-button">Read more</button>
         </article>
         <!-- Sign-up section -->
         <section class="sign-up-section">
@@ -89,6 +106,7 @@
             <img src="images/instagram-logo.svg" alt="facebook logo">
         </div>
     </footer>
+    <script src="script.js"></script>
     <!-- <img width="871" alt="skiss" src="/images/klader_till_skolan.png"> -->
 </body>
 </html>

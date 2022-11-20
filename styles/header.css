@@ -31,10 +31,56 @@ h1 {
     text-align: center;
 }
 
+nav {
+    position: relative;
+}
+
 .hamburger {
     margin-left: 23px;
+    position: relative;
     background-color: #D9D9D9;
     padding: 11.5px 3.5px 11.5px 3.5px;
+    z-index: 1;
+}
+
+.hamburger-menu-wrapper {
+    background-color: #D9D9D9;
+    width: 247px;
+    height: 310px;
+    position: absolute;
+    top: 0;
+    left: 23px;
+}
+
+.hamburger-menu-list {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.hamburger-menu-list li {
+    margin: 17px 0 17px 0;
+}
+
+.hamburger-menu-list li:nth-of-type(5) {
+    margin-bottom: 0;
+}
+
+.choose-language-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.choose-language-container img {
+    margin-left: 10px;
+    height: 45px;
+    width: 40px;
 }
 
 .basket {
