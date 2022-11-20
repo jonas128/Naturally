@@ -43,6 +43,10 @@ nav {
     z-index: 1;
 }
 
+.active {
+    display: none;
+} 
+
 .hamburger-menu-wrapper {
     background-color: #D9D9D9;
     width: 247px;
