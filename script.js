@@ -22,6 +22,3 @@ menuButtonSelect.addEventListener("click", function() {
             menuWrapperSelect.classList.add("active");
         }
 });
-
-
-
