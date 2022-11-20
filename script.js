@@ -11,7 +11,7 @@ buttonSelect.addEventListener("click", function() {
     } 
 }); 
 
-// Make menu appear or disappear by clicking hamburger menu icon
+// Make menu appear or disappear by clicking on hamburger menu icon
 const menuWrapperSelect = document.querySelector(".hamburger-menu-wrapper");
 const menuButtonSelect = document.querySelector(".hamburger");
 
