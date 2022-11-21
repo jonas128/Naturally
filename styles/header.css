@@ -97,3 +97,21 @@ nav {
     background-color: #D9D9D9;
     padding: 5px;
 }
+
+/* Screens with minimum width 700px */
+@media screen and (min-width: 700px) {
+    header {
+        height: 144px;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    h1 {
+        font-size: 54px;
+        line-height: 94px;
+        width: 252px;
+        height: 94px;
+    }
+}

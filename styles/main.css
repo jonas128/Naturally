@@ -14,7 +14,7 @@ main {
 .story-section-image-container {
     background-color: #D9D9D9;
     width: 100%;
-    height: 202px;
+    padding-top: 56.25%; 
 }
 
 .circle-container {
@@ -58,6 +58,7 @@ main {
     width: 133px;
     color: black;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* Collection section */
@@ -85,7 +86,7 @@ main {
 .collection-section-image {
     background-color: #D9D9D9;
     width: auto;
-    height: 214px;
+    padding-top: 144.6%;
     margin-bottom: 16px;
 }
 
@@ -182,4 +183,45 @@ article {
     font-size: 12px;
     margin-bottom: 16px;
     text-align: center;
+}
+
+/* Screens with minimum width 700px */
+@media screen and (min-width: 700px) {
+    /* Our story section */
+    .circle-test {
+        width: 32px;
+        height: 32px;
+        margin: 64px 8.5px;
+    }
+    .story-section-heading2 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 710px;
+        margin-bottom: 64px;
+    }
+    .story-section-button {
+        width: 212px;
+        height: 85px;
+        font-size: 24px;
+    }
+    /* Article */
+    .article-paragraph {
+        width: 710px;
+        font-size: 24px;
+        line-height: 37px;
+    }
+}
+@media screen and (min-width: 1400px) {
+     /* Collection section */
+    .collection-section-heading2 {
+        font-size: 30px;
+        margin-left: 32px;
+        margin-bottom: 24px;
+    }
+    .collection-section-image-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;margin-left: 24px;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
 }
