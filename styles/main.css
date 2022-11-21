@@ -188,6 +188,9 @@ article {
 /* Screens with minimum width 700px */
 @media screen and (min-width: 700px) {
     /* Our story section */
+    .story-section {
+        margin-top: 144px;
+    }
     .circle-test {
         width: 32px;
         height: 32px;

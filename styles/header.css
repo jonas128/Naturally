@@ -92,6 +92,10 @@ nav {
     width: 40px;
 }
 
+.logo-fish, .desktop-menu, .search {
+    display: none;
+}
+
 .basket {
     margin-right: 23px;
     background-color: #D9D9D9;
@@ -102,8 +106,16 @@ nav {
 @media screen and (min-width: 700px) {
     header {
         height: 144px;
-        display: flex;
-        align-items: center;
+    }
+    .flex-container {
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        justify-content: center;
+    }
+    nav {
+        height: 100%;
+        /* margin-right: auto; */
     }
     .hamburger {
         display: none;
@@ -113,5 +125,43 @@ nav {
         line-height: 94px;
         width: 252px;
         height: 94px;
+        margin: auto;
+    }
+    .logo-fish, .desktop-menu, .search, .desktop-choose-language-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktop-menu {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-size: 24px;
+        font-family: "Inter-Regular", sans-serif;
+        list-style: none;
+    }
+    .desktop-choose-language-container {
+        margin-left: 40px;
+    }
+    .desktop-choose-language-container img {
+        margin-left: 10px;
+    }
+    .basket-search-container {
+        display: flex;
+        /* margin-left: auto; */
+    }
+    .search {
+        margin-right: 8px;
+    }
+    .basket {
+        background-color: white;
+        height: 46px;
+        width: 46px;
+        margin-right: 40px;
+    }
+    .logo-fish {
+        width: 91px;
+        height: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
