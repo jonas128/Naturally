@@ -125,8 +125,14 @@ article {
     position: relative;
 }
 
+.sign-up-section picture {
+   display: flex;
+   justify-content: center;
+}
+
 .sign-up-section img {
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 .sign-up-section-heading2 {
@@ -207,13 +213,39 @@ article {
         height: 85px;
         font-size: 24px;
     }
+    /* Collection section */
+    .collection-section {
+        margin-top: 128px;
+     }
     /* Article */
+    article {
+        margin-top: 128px;
+    }
     .article-paragraph {
         width: 710px;
         font-size: 24px;
         line-height: 37px;
+        margin-top: 0;
+    }
+    .article-read-more-button {
+        height: 85px;
+        width: 216px;
+        font-size: 24px;
+    }
+    /* Sign-up section */
+    .sign-up-section {
+        margin-top: 160px;
+        margin-bottom: 0;
+    }
+    .follow-section {
+        margin-top: 160px;
+        margin-bottom: 0;
+    }
+    footer {
+        margin-top: 128px;
     }
 }
+/* Screens with minimum width 1400px */
 @media screen and (min-width: 1400px) {
      /* Collection section */
     .collection-section-heading2 {
@@ -223,8 +255,39 @@ article {
     }
     .collection-section-image-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;margin-left: 24px;
+        grid-template-rows: auto;
         margin-right: 32px;
         margin-left: 32px;
+    }
+    /* Sign up section */
+    .sign-up-section {
+        width: calc(100% - 64px);
+    }
+    .sign-up-section-heading2 {
+        font-size: 54px;
+        line-height: 70px;
+        width: 498px;
+    }
+    .sign-up-section-button {
+        height: 85px;
+        width: 216px;
+        font-size: 24px;
+    }
+    /* Follow us section */
+    .follow-section {
+        width: calc(100% - 64px);
+    }
+    .follow-section-heading2 {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .follow-section-grid-container  {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .follow-section-grid-item-container p {
+        font-size: 24px;
     }
 }

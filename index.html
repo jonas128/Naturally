@@ -81,8 +81,11 @@
         </article>
         <!-- Sign-up section -->
         <section class="sign-up-section">
-            <img src="images/sign-up.png">
-            <h2 class="sign-up-section-heading2">Sign up get 20% off your first order</h2>
+            <picture>
+                <source class="sign-up-section-desktop-image" media="(min-width:700px)" srcset="images/desktop-sign-up.png" alt="">
+                <img src="images/sign-up.png" alt="">
+            </picture>
+            <h2 class="sign-up-section-heading2">Sign up to get 20% off your first order</h2>
             <button class="sign-up-section-button">Sign up</button>
         </section>
         <!-- Follow us section -->
@@ -109,15 +112,19 @@
         </section>
     </main>
     <footer>
+        <div class="footer-our-story-wrapper">
+            <h3 class="footer-our-story-heading">Our story</h3>
+            <p class="footer-our-story-paragraph">Stylish design made by the futures creators at Yrgo. We programmed the site with web developers and designed with Digital Designers and Computer Graphic Designers. In the future it is they who lead the way together with companies like us at Naturally.</p>
+        </div>
         <address>
+            <h3 class="footer-contact-heading">Contact us</h3>
             <a href="mailto:contact@turingclothing.com">contact@turingclothing.com</a>
         </address>
-        <div class="article-social-media-container">
+        <div class="footer-social-media-container">
             <img src="images/facebook-logo.svg" alt="facebook logo">
             <img src="images/instagram-logo.svg" alt="facebook logo">
         </div>
     </footer>
     <script src="script.js"></script>
-    <!-- <img width="871" alt="skiss" src="/images/klader_till_skolan.png"> -->
 </body>
 </html>
