@@ -14,7 +14,7 @@ main {
 .story-section-image-container {
     background-color: #D9D9D9;
     width: 100%;
-    height: 202px;
+    padding-top: 56.25%; 
 }
 
 .circle-container {
@@ -85,8 +85,11 @@ main {
 .collection-section-image {
     background-color: #D9D9D9;
     width: auto;
-    height: 214px;
+    padding-top: 144.6%;
     margin-bottom: 16px;
+}
+.collection-section-image p {
+    display: none;
 }
 
 /* Article */
@@ -124,8 +127,14 @@ article {
     position: relative;
 }
 
+.sign-up-section picture {
+   display: flex;
+   justify-content: center;
+}
+
 .sign-up-section img {
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 .sign-up-section-heading2 {
@@ -182,4 +191,127 @@ article {
     font-size: 12px;
     margin-bottom: 16px;
     text-align: center;
+}
+
+/* Screens with minimum width 700px */
+@media screen and (min-width: 700px) {
+    /* Our story section */
+    .story-section {
+        margin-top: 144px;
+    }
+    .circle-test {
+        width: 32px;
+        height: 32px;
+        margin: 64px 8.5px;
+    }
+    .story-section-heading2 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 710px;
+        margin-bottom: 64px;
+    }
+    .story-section-button {
+        width: 212px;
+        height: 85px;
+        font-size: 24px;
+    }
+    /* Collection section */
+    .collection-section {
+        margin-top: 128px;
+     }
+    /* Article */
+    article {
+        margin-top: 158px;
+    }
+    .article-paragraph {
+        width: 710px;
+        font-size: 24px;
+        line-height: 37px;
+        margin-top: 0;
+    }
+    .article-read-more-button {
+        height: 85px;
+        width: 216px;
+        font-size: 24px;
+    }
+    /* Sign-up section */
+    .sign-up-section {
+        margin-top: 160px;
+        margin-bottom: 0;
+    }
+    .follow-section {
+        margin-top: 160px;
+        margin-bottom: 0;
+    }
+    footer {
+        margin-top: 128px;
+    }
+}
+/* Screens with minimum width 1400px */
+@media screen and (min-width: 1400px) {
+     /* Collection section */
+    .collection-section-heading2 {
+        font-size: 30px;
+        margin-left: 32px;
+        margin-bottom: 24px;
+    }
+    .collection-section-image-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .collection-section-image {
+        margin-bottom: 0;
+    }
+    .collection-section-image p {
+        display: block;
+        width: 100%;
+        position: relative;
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 24px;
+    }
+    .collection-section-image p span:first-of-type {
+        display: inline;
+        position: absolute;
+        left: 2px;
+        top: 8px;
+    }
+    .collection-section-image p span:last-of-type {
+        display: inline;
+        position: absolute;
+        right: 2px;
+        top: 8px;
+    } 
+    /* Sign up section */
+    .sign-up-section {
+        width: calc(100% - 64px);
+    }
+    .sign-up-section-heading2 {
+        font-size: 54px;
+        line-height: 70px;
+        width: 498px;
+    }
+    .sign-up-section-button {
+        height: 85px;
+        width: 216px;
+        font-size: 24px;
+    }
+    /* Follow us section */
+    .follow-section {
+        width: calc(100% - 64px);
+    }
+    .follow-section-heading2 {
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .follow-section-grid-container  {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .follow-section-grid-item-container p {
+        font-size: 24px;
+    }
 }

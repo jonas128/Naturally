@@ -2,25 +2,28 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 54px;
     width: 100%;
     background-color: #D9D9D9;
 }
 
 address a {
+    display: flex;
+    justify-content: flex-start;
     font-style: normal;
     color: black;
     font-size: 12px;
     font-family: "Lustria-Regular";
     margin-left: 24px;
-    margin-right: 24px;
+    margin-right: auto;
 }
 
-.article-social-media-container {
+.footer-social-media-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-left: auto;
 }
 
 footer img:last-of-type {
@@ -31,4 +34,71 @@ footer img:last-of-type {
 footer img {
     width: 30px;
     height: 30px;
+}
+
+.footer-our-story-heading, .footer-our-story-paragraph, .footer-contact-heading {
+    display: none;
+}
+
+/* Screens with minimum width 700px */
+@media screen and (min-width: 700px) {
+    footer {
+        height: 420px;
+    }
+    .footer-our-story-heading, .footer-our-story-paragraph, .footer-contact-heading {
+        display: block;
+    }
+    .footer-our-story-wrapper {
+        width: 45%;
+        margin-left: 32px;
+        height: 100%;
+    }
+    .footer-our-story-heading {
+        font-size: 24px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-family: "Inter-Regular", sans-serif;
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+    .footer-our-story-paragraph {
+        font-size: 24px;
+        line-height: 37px;
+        font-family: "Inter-Regular", sans-serif;
+    }
+    .footer-contact-heading {
+        font-family: "Inter-Regular", sans-serif;
+        margin-bottom: 24px;
+        margin-top: 80px;
+    }
+    address {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        height: 100%;
+        margin-left: 10%;
+    }
+    address, address a {
+        font-style: normal;
+        font-size: 24px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-family: "Inter-Regular", sans-serif;
+    }
+    address a {
+        margin-left: 0;
+    }
+    .footer-social-media-container {
+        align-items: flex-end;
+        height: calc(100% - 80px);
+        margin-bottom: 80px;
+        margin-right: 80px;
+    }
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
+    footer img:last-of-type {
+        margin-right: 0;
+    }
 }
