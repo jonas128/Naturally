@@ -115,7 +115,10 @@ nav {
     }
     nav {
         height: 100%;
-        /* margin-right: auto; */
+        margin-right: auto;
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
     }
     .hamburger {
         display: none;
@@ -147,7 +150,9 @@ nav {
     }
     .basket-search-container {
         display: flex;
-        /* margin-left: auto; */
+        margin-left: auto;
+        flex: 1;
+        justify-content: flex-end;
     }
     .search {
         margin-right: 8px;
