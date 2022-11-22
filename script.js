@@ -22,3 +22,15 @@ menuButtonSelect.addEventListener("click", function() {
             menuWrapperSelect.classList.add("active");
         }
 });
+
+// Make desktop menu appear or disappear by clicking on "Products"
+const deskstopMenuSelect = document.querySelector(".desktop-product-menu-wrapper");
+const desktopMenuButtonSelect = document.querySelector(".products-select");
+
+desktopMenuButtonSelect.addEventListener("click", function() {
+    if (deskstopMenuSelect.classList.contains("desktop-menu-active")) {
+        deskstopMenuSelect.classList.remove("desktop-menu-active");
+    } else {
+        deskstopMenuSelect.classList.add("desktop-menu-active");
+    }
+});
