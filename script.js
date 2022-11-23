@@ -5,7 +5,7 @@ const dotsSelect = document.getElementById("dots");
 
 buttonSelect.addEventListener("click", function() {
     if (moreSelect.style.display = "none") {
-        moreSelect.style.display = "block";
+        moreSelect.style.display = "inline";
         dotsSelect.style.display = "none";
         buttonSelect.style.display = "none";
     } 
@@ -34,3 +34,30 @@ desktopMenuButtonSelect.addEventListener("click", function() {
         deskstopMenuSelect.classList.add("desktop-menu-active");
     }
 });
+
+// Slideshow
+let slideshowIndex = 0; 
+
+slideshow();
+
+function slideshow() {
+    let i; 
+    let slideshowItems = document.querySelectorAll(".slideshowItem");
+    let circles = document.querySelectorAll(".circle");
+
+    for (i = 0; i < circles.length; i++) {
+        slideshowItems[i].style.display = "none";
+    }
+    slideshowIndex++;
+    if (slideshowIndex > slideshowItems.length) {
+        slideshowIndex = 1;
+    }
+    for (i = 0; i < circles.length; i++) {
+        circles[i].className = circles[i].className.replace(" activeCircle", "");
+    }
+    slideshowItems[slideshowIndex-1].style.display = "block";
+    circles[slideshowIndex-1].className += " activeCircle";
+    setTimeout(slideshow, 3000);
+} 
+
+

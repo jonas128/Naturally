@@ -40,8 +40,8 @@ footer img {
     display: none;
 }
 
-/* Screens with minimum width 700px */
-@media screen and (min-width: 700px) {
+/* Screens with minimum width 1400px */
+@media screen and (min-width: 1400px) {
     footer {
         height: 420px;
     }
