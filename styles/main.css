@@ -11,10 +11,24 @@ main {
     align-items: center;
 }
 
-.story-section-image-container {
+.slideshow-wrapper {
+    position: relative;
     background-color: #D9D9D9;
     width: 100%;
-    padding-top: 56.25%; 
+    aspect-ratio: 16 / 9;
+}
+
+.slideshowItem {
+    position: absolute;
+    top: 0;
+    display: none;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.slideshowItem img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 .circle-container {
@@ -23,11 +37,7 @@ main {
     justify-content: space-between;
 }
 
-.circle-test:first-of-type {
-    background-color: black;
-}
-
-.circle-test {
+.circle {
     width: 14px;
     height: 14px;
     border-radius: 100%;
@@ -38,7 +48,7 @@ main {
     cursor: pointer;
 }
 
-.circle-test:active, .circle-test:hover {
+.activeCircle {
     background-color: black;
 }
 
@@ -199,7 +209,7 @@ article {
     .story-section {
         margin-top: 144px;
     }
-    .circle-test {
+    .circle {
         width: 32px;
         height: 32px;
         margin: 64px 8.5px;
