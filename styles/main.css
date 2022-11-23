@@ -193,8 +193,8 @@ article {
     text-align: center;
 }
 
-/* Screens with minimum width 700px */
-@media screen and (min-width: 700px) {
+/* Screens with minimum width 1400px */
+@media screen and (min-width: 1400px) {
     /* Our story section */
     .story-section {
         margin-top: 144px;
