@@ -5,7 +5,7 @@ const dotsSelect = document.getElementById("dots");
 
 buttonSelect.addEventListener("click", function() {
     if (moreSelect.style.display = "none") {
-        moreSelect.style.display = "block";
+        moreSelect.style.display = "inline";
         dotsSelect.style.display = "none";
         buttonSelect.style.display = "none";
     } 
