@@ -108,6 +108,14 @@ main {
     margin-bottom: 16px;
     position: relative;
 }
+
+.collection-section-image img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    position: absolute;
+}
+
 .collection-section-image p {
     display: none;
 }
