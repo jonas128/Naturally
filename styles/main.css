@@ -193,6 +193,7 @@ article {
 
 .follow-section-grid-item-container img {
     max-width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: 8px;
 }
 
