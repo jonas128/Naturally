@@ -63,5 +63,3 @@ function slideshow() {
     circles[slideshowIndex-1].className += " activeCircle";
     setTimeout(slideshow, 3000);
 } 
-
-
