@@ -79,6 +79,10 @@ main {
     font-size: 16px;
 }
 
+.story-section-button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
 /* Collection section */
 .collection-section {
     width: 100%;
@@ -144,6 +148,10 @@ article {
     font-size: 16px;
 }
 
+.article-read-more-button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
 .dotsHidden {
     display: none;
 }
@@ -195,6 +203,10 @@ article {
     bottom: 8%;
 }
 
+.sign-up-section-button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
 /* Follow us section */
 .follow-section {
     width: calc(100% - 48px);
@@ -216,13 +228,13 @@ article {
 .follow-section-grid-item-container img {
     max-width: 100%;
     aspect-ratio: 1/1;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .follow-section-grid-item-container p {
     font-family: "Inter-Regular", sans-serif;
     font-size: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     text-align: center;
 }
 
@@ -253,6 +265,13 @@ article {
         height: 85px;
         font-size: 24px;
     }
+    .story-section-button:hover {
+        filter: blur(1px);
+    }
+    .story-section-button:active {
+        filter: blur(0);
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
     /* Collection section */
     .collection-section {
         margin-top: 128px;
@@ -271,6 +290,13 @@ article {
         height: 85px;
         width: 216px;
         font-size: 24px;
+    }
+    .article-read-more-button:hover {
+        filter: blur(1px);
+    }
+    .article-read-more-button:active {
+        filter: blur(0);
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
     }
     /* Sign-up section */
     .sign-up-section {
@@ -333,6 +359,13 @@ article {
         height: 85px;
         width: 216px;
         font-size: 24px;
+    }
+    .sign-up-section-button:hover {
+        filter: blur(1px);
+    }
+    .sign-up-section-button:active {
+        filter: blur(0);
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
     }
     /* Follow us section */
     .follow-section {
