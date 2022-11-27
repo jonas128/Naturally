@@ -1,4 +1,4 @@
-// Show or hide full article text by clicking "Read more" or "Read less"
+// Show or hide full article text by clicking "Read more" or "Read less" (mobile)
 const buttonSelect = document.querySelector(".article-read-more-button");
 const moreSelect = document.getElementById("more");
 const dotsSelect = document.getElementById("dots");
@@ -12,6 +12,23 @@ buttonSelect.addEventListener("click", function() {
         buttonSelect.textContent = "Read more"
         moreSelect.classList.add("moreHidden");
         dotsSelect.classList.remove("dotsHidden");
+    }
+});
+
+// Show or hide full article text by clicking "Read more" or "Read less" (desktop)
+const buttonSelectDesktop = document.querySelector(".article-read-more-button-desktop");
+const moreSelectDesktop = document.getElementById("more-desktop");
+const dotsSelectDesktop = document.getElementById("dots-desktop");
+
+buttonSelectDesktop.addEventListener("click", function() {
+    if (moreSelectDesktop.classList.contains("moreHiddenDesktop")) {
+        buttonSelectDesktop.textContent = "Read less";
+        moreSelectDesktop.classList.remove("moreHiddenDesktop");
+        dotsSelectDesktop.classList.add("dotsHiddenDesktop");
+    } else {
+        buttonSelectDesktop.textContent = "Read more"
+        moreSelectDesktop.classList.add("moreHiddenDesktop");
+        dotsSelectDesktop.classList.remove("dotsHiddenDesktop");
     }
 });
 

@@ -130,11 +130,20 @@ article {
     flex-direction: column;
     align-items: center;
 }
+
 .article-paragraph {
     font-size: 16px;
     line-height: 26px;
     margin: 42px 24px 30px 24px;
     font-family: "Inter-Regular", sans-serif;
+}
+
+.article-paragraph:last-of-type {
+    display: none;
+}
+
+.article-read-more-button-desktop {
+    display: none;
 }
 
 .article-read-more-button {
@@ -287,23 +296,42 @@ article {
         margin-top: 158px;
         position: relative;
     }
-    .article-paragraph {
+    .article-paragraph:first-of-type {
+        display: none;
+    }
+    .article-paragraph:last-of-type {
+        display: block;
         width: 710px;
         font-size: 24px;
         line-height: 37px;
         margin-top: 0;
     }
     .article-read-more-button {
+        display: none;
+    }
+    .article-read-more-button-desktop {
+        display: block;
         height: 85px;
         width: 216px;
         font-size: 24px;
+        background-color: white;
+        border: 1px solid black;
+        font-family: "Lustria-Regular", sans-serif;
+        color: black;
+        cursor: pointer;
     }
-    .article-read-more-button:hover {
+    .article-read-more-button-desktop:hover {
         filter: blur(1px);
     }
-    .article-read-more-button:active {
+    .article-read-more-button-desktop:active {
         filter: blur(0);
         box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    .dotsHiddenDesktop {
+        display: none;
+    }
+    .moreHiddenDesktop {
+        display: none;
     }
     .article-logo {
         display: block;
