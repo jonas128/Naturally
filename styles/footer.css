@@ -44,6 +44,8 @@ footer img {
 @media screen and (min-width: 1400px) {
     footer {
         height: 420px;
+        background-color: white;
+        margin-top: 10px;
     }
     .footer-our-story-heading, .footer-our-story-paragraph, .footer-contact-heading {
         display: block;

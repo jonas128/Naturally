@@ -1,17 +1,21 @@
-// Make full article text appear by clicking on "Read more" button
+// Show or hide full article text by clicking "Read more" or "Read less"
 const buttonSelect = document.querySelector(".article-read-more-button");
 const moreSelect = document.getElementById("more");
 const dotsSelect = document.getElementById("dots");
 
 buttonSelect.addEventListener("click", function() {
-    if (moreSelect.style.display = "none") {
-        moreSelect.style.display = "inline";
-        dotsSelect.style.display = "none";
-        buttonSelect.style.display = "none";
-    } 
-}); 
+    if (moreSelect.classList.contains("moreHidden")) {
+        buttonSelect.textContent = "Read less";
+        moreSelect.classList.remove("moreHidden");
+        dotsSelect.classList.add("dotsHidden");
+    } else {
+        buttonSelect.textContent = "Read more"
+        moreSelect.classList.add("moreHidden");
+        dotsSelect.classList.remove("dotsHidden");
+    }
+});
 
-// Make menu appear or disappear by clicking on hamburger menu icon
+// Show and hide hamburger menu by clicking menu icon
 const menuWrapperSelect = document.querySelector(".hamburger-menu-wrapper");
 const menuButtonSelect = document.querySelector(".hamburger");
 
@@ -23,7 +27,7 @@ menuButtonSelect.addEventListener("click", function() {
         }
 });
 
-// Make desktop menu appear or disappear by clicking on "Products"
+// Show and hide products menu by clicking "Products"
 const deskstopMenuSelect = document.querySelector(".desktop-product-menu-wrapper");
 const desktopMenuButtonSelect = document.querySelector(".products-select");
 
@@ -59,5 +63,3 @@ function slideshow() {
     circles[slideshowIndex-1].className += " activeCircle";
     setTimeout(slideshow, 3000);
 } 
-
-
