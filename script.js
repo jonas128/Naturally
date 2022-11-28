@@ -78,5 +78,5 @@ function slideshow() {
     }
     slideshowItems[slideshowIndex-1].style.display = "block";
     circles[slideshowIndex-1].className += " activeCircle";
-    setTimeout(slideshow, 3000);
+    setTimeout(slideshow, 5000);
 } 
