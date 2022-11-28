@@ -54,7 +54,6 @@ main {
     margin: 24px 3.5px 24px 3.5px;
     font-weight: normal;
     transition: background-color 2000ms ease;
-    cursor: pointer;
 }
 
 .activeCircle {
