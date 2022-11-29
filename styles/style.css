@@ -34,3 +34,7 @@ h2, h3 {
     font-family: "Lustria-Regular", sans-serif;
     font-weight: normal;
 }
+
+a:visited {
+    color: inherit;
+}
