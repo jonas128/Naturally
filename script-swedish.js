@@ -80,3 +80,11 @@ function slideshow() {
     circles[slideshowIndex-1].className += " activeCircle";
     setTimeout(slideshow, 5000);
 } 
+
+// Change content sign-up button after user click
+let signUpSectionButton = document.querySelector(".sign-up-section-button");
+
+signUpSectionButton.addEventListener("click", function() {
+    signUpSectionButton.textContent = "Registrerad!";
+    signUpSectionButton.classList.add("signed-up");
+});
