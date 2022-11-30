@@ -267,8 +267,6 @@ article {
 @media screen and (min-width: 1400px) {
     main {
         padding-bottom: 128px;
-        box-shadow: 0 4px 2px -2px black;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px 0;
     }
     /* Our story section */
     .story-section {
@@ -455,6 +453,5 @@ article {
     main {
         width: 1512px;
         margin: auto;
-        box-shadow: none;
     }
 }
