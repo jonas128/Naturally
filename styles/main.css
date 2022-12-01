@@ -417,11 +417,11 @@ article {
     .sign-up-section {
         width: calc(100% - 64px);
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .sign-up-dress {
-        width: 578px;
+        width: 350px;
         order: 1;
     }
 
