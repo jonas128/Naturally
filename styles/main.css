@@ -179,34 +179,48 @@ article {
 /* Sign-up section */
 .sign-up-section {
     width: calc(100% - 48px);
-    margin: 40px auto;
-    position: relative;
+    margin: 42px auto;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sign-up-section picture {
+.sign-up-dress {
+    width: 100%;
+}
+
+/* .sign-up-section picture {
    display: flex;
    justify-content: center;
-}
+} */
 
-.sign-up-section img {
+/* .sign-up-section img {
     width: 100%;
     margin: auto;
+} */
+
+.test-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sign-up-section-heading2 {
-    position: absolute;
+    /* position: absolute; */
     font-size: 16px;
     line-height: 22px;
-    color: white;
+    color: black;
     text-align: center;
-    top: 12%;
+    margin: 20px 0 0 0;
+    /* top: 12%;
     right: 50%;
-    width: 46%;
-    transform: translateX(50%);
+    width: 46%; */
+    /* transform: translateX(50%); */
 }
 
 .sign-up-section-button {
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     border: 1px solid black;
     font-family: "Lustria-Regular", sans-serif;
@@ -214,10 +228,11 @@ article {
     width: 133px;
     color: black;
     font-size: 16px;
-    right: 50%;
+    /* right: 50%;
     transform: translateX(50%);
-    bottom: 8%;
+    bottom: 8%; */
     cursor: pointer;
+    margin: 20px 0 0 0;
 }
 
 .sign-up-section-button:active {
@@ -401,7 +416,16 @@ article {
     /* Sign up section */
     .sign-up-section {
         width: calc(100% - 64px);
+        flex-direction: row;
+        justify-content: space-around;
     }
+
+    .sign-up-dress {
+        width: 33%;
+        order: 1;
+    }
+
+
     .sign-up-section-heading2 {
         font-size: 54px;
         line-height: 70px;
