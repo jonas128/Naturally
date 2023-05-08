@@ -6,4 +6,4 @@ The company Naturally has just released their Turing clothing line, and here is 
 **[Check it out.](https://naturally-turing.netlify.app/)**
 
 <img width="871" alt="skiss" src="/images/klader_till_skolan.png">
-<sub>Sketch from the project</sub> 
+<sub>Sketch from the project.</sub> 
