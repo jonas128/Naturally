@@ -1,4 +1,4 @@
-![](https://wpvip.ted.com/wp-content/uploads/sites/3/2014/08/turing_gif4green_09.gif)
+![](https://media1.giphy.com/media/k9eSSadVp53Tq/giphy.gif?cid=ecf05e47j15utqhmddr5ommju2mtqs34fl9yzgi4ckyy9g5n&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 # Naturally
 A joint project with students in web development, digital design and computer graphics design.
